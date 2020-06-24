@@ -24,7 +24,7 @@ video.addEventListener("play", () => {
             .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
             .withFaceExpressions();
         // console.log(detections)
-        const expressions = detections.pop()['expressions']
-        console.log(expressions)
+        const {angry, digusted, fearful, happy, neutral, sad, surprised} = detections.pop()['expressions']
+        console.log(happy)
     }, 100);
 });
