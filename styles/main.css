@@ -12,20 +12,37 @@ body {
 }
 
 #video {
-    /* height: 50vh; */
-    /* width: 50vh; */
-    /* border: 3px #f33 solid; */
-    box-shadow: 0 0 100px #333;
-    transform: scale(-1, 1);
-}
-
-canvas {
-    background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
+    height: 100vh;
+    width: 100vh;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    transform: translate(-50%, -50%) scale(-1, 1);
+}
+
+.container {
     z-index: 2;
+    height: 100vh;
+    width: 100vh;
+    /* background: green; */
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.container div {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div p {
+    font-size: 2rem;
+}
+
+.container div img {
+    width: 30%;
+    height: 30%;
 }
